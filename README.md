@@ -1,18 +1,18 @@
-# Episode-Renaming-Script
+# 🎬 Episode-Renaming-Script
 
-### Overview of the Python Script
+### Overview of the Python Script 🐍
 The script helps rename video files for a show, organizing them by season and episode. It scans folders, identifies season and episode numbers in the folder and file names, and renames the files using a standard format. The renaming pattern includes the show's name, season number, episode number, and optional extra text.
 
 This Python script is designed to rename video files for TV shows, organizing them by season and episode. The script scans a directory for season folders and episode files, extracts season and episode numbers from folder and file names, and renames the files in a consistent format.
 
-## Features
+## ✨ Features
 
-- Automatically identifies season and episode numbers from folder and file names.
-- Ignores specified folders during the renaming process.
-- Adds custom text (e.g., language tags) to renamed files.
-- Handles common naming conventions such as "S01E01" or "Episode 1".
+- 🔍 Automatically identifies season and episode numbers from folder and file names.
+- 🚫 Ignores specified folders during the renaming process.
+- 🏷️ Adds custom text (e.g., language tags) to renamed files.
+- 📂 Handles common naming conventions such as "S01E01" or "Episode 1".
 
-## Usage
+## 🚀 Usage
 
 1. **Clone the repository** and navigate to the project directory.
 2. Modify the `mini_mtbb_path` and `trix_path` variables to match the directories containing your TV show files.
@@ -22,7 +22,7 @@ This Python script is designed to rename video files for TV shows, organizing th
     python rename_episodes.py
     ```
 
-### Example
+### Example 📝
 
 In this example, the script renames episodes of *Attack on Titan*:
 
@@ -34,7 +34,7 @@ rename_episodes("/path/to/MiniMTBB")
 rename_episodes("/path/to/Trix", ignore_folders=["OVAs"], extra_text=" English Dub")
 ```
 
-## Functions
+## 🛠️ Functions
 
 ### `get_season_folders(path, ignore_folders=None)`
 Retrieves a list of season folders from the specified path, excluding folders listed in `ignore_folders`.
@@ -48,11 +48,11 @@ Extracts the episode number from a file name. Supports patterns like `E01`, `Epi
 ### `rename_episodes(root_path, ignore_folders=None, extra_text="")`
 Renames all episode files in the specified folder, using the detected season and episode numbers. Optionally adds extra text to the file name.
 
-## Notes
+## 📌 Notes
 
 - This script is particularly useful for organizing video files downloaded with inconsistent naming conventions.
 - Make sure to adjust the folder paths and any additional preferences before running the script.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License.
